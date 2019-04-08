@@ -66,8 +66,8 @@ Transform: &#39;AWS::Serverless-2016-10-31&#39; Resources: ThumbnailFunction: # 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://strongjz.github.io/dfw-hashi/home/60_terraform/</guid>
-      <description> AWS Serverless Framework this is great if we stick to the AWS Cloudformation
-Lambda Link to Lambda AWS API Gateway Link to Gateway Dynamodb Link to Dynamodb S3 Link to S3 </description>
+      <description> AWS Serverless Application Model This is great if we stick to the AWS Cloudformation
+Slack Bucks Architecture Lambda Link to Lambda AWS API Gateway Link to Gateway Dynamodb Link to Dynamodb S3 Link to S3 </description>
     </item>
     
     <item>

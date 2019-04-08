@@ -64,5 +64,3 @@ go get github.com/awslabs/aws-lambda-go-api-proxy
 ---
 
 # Deployment
-
----

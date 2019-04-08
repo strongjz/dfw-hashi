@@ -3,9 +3,15 @@ title = "Trraform"
 weight = 60
 +++
 
-# AWS Serverless Framework
+# AWS Serverless Application Model
 
-this is great if we stick to the AWS Cloudformation
+This is great if we stick to the AWS Cloudformation
+
+---
+
+### Slack Bucks Architecture
+
+![](/images/arch.png)
 
 ---
 
