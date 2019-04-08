@@ -6,7 +6,6 @@
     <description>Recent content in Homes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 14:25:28 -0500</lastBuildDate>
     
 	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +13,7 @@
     <item>
       <title></title>
       <link>/home/15_whoami/</link>
-      <pubDate>Sun, 09 Dec 2018 14:25:28 -0500</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/home/15_whoami/</guid>
       <description>whoami James Strong
@@ -29,7 +28,7 @@ https://jamesstrong.dev</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/home/20_intro/</guid>
-      <description> Agenda  Serverless AWS Serverless Framework Terraform deployment Development Demo Slack Bucks  Architecture </description>
+      <description> Agenda  Serverless AWS Serverless Application Model (SAM) Development Terraform deployment Demo Slack Bucks  Architecture Slack Bucks Architecture </description>
     </item>
     
     <item>
@@ -47,27 +46,27 @@ https://jamesstrong.dev</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/home/40_aws/</guid>
-      <description>AWS Serverless Framework Stuff Lamda Lambda &amp;ldquo;AWS Lambda is a compute rservie that runs your code in response to events and automatically manages the compute resources for you, making it easy to build applications that respond quickly to new information&amp;rdquo;
-Lambda  Code: s3 Metadata: Dynamobdb Execution: EC2 instances Permissions: IAM Roles  Lambda &amp;ldquo;Run and forget&amp;rdquo;
-Lambda  Function Resources Allocation Code Event Trigger  Lambda Drawback: Does NOT respond to HTTP Events</description>
-    </item>
-    
-    <item>
-      <title>Terraform</title>
-      <link>/home/50_terraform/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/home/50_terraform/</guid>
-      <description> AWS Serverless Framework Stuff Lamda Stuff AWS API Gateway Stuff Dynamodb Stuff S3 Stuff </description>
+      <description>AWS Serverless Application Model (SAM) AWS SAM AWS SAM template specification
+Transform: &#39;AWS::Serverless-2016-10-31&#39; Resources: ThumbnailFunction: # This resource creates a Lambda function. Type: &#39;AWS::Serverless::Function&#39; Properties: # This function uses the Nodejs v6.10 runtime. Runtime: nodejs6.10 # This is the Lambda function&#39;s handler. Handler: index.handler # The location of the Lambda function code. CodeUri: ./src # Event sources to attach to this function. In this case, we are attaching # one API Gateway endpoint to the Lambda function.</description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>/home/60_development/</link>
+      <link>/home/50_development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/60_development/</guid>
-      <description> Serverless Development Ngrok Stuff AWS SAM Stuff AWS Dynamodb Local Stuff Deployment Stuff </description>
+      <guid>/home/50_development/</guid>
+      <description>Serverless Development Lambda setup There&amp;rsquo;s three basic options for structuring this using AWS Lambda:
+ Microservice — A single lambda function is responsible for only one action. For example, there are 3 separate lambda functions for showing, creating and deleting a book. Service — A single lambda function is responsible for a group of related actions. For example, one lambda function handles all book-related actions, but customer-related actions are kept in a separate lambda function.</description>
+    </item>
+    
+    <item>
+      <title>Trraform</title>
+      <link>/home/60_terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/60_terraform/</guid>
+      <description> AWS Serverless Framework Stuff Lamda Stuff AWS API Gateway Stuff Dynamodb Stuff S3 Stuff </description>
     </item>
     
     <item>

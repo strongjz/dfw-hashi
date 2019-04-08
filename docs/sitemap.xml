@@ -4,7 +4,6 @@
   
   <url>
     <loc>/home/15_whoami/</loc>
-    <lastmod>2018-12-09T14:25:28-05:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +19,11 @@
   </url>
   
   <url>
-    <loc>/home/50_terraform/</loc>
+    <loc>/home/50_development/</loc>
   </url>
   
   <url>
-    <loc>/home/60_development/</loc>
+    <loc>/home/60_terraform/</loc>
   </url>
   
   <url>
@@ -42,12 +41,10 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-12-09T14:25:28-05:00</lastmod>
   </url>
   
   <url>
     <loc>/home/</loc>
-    <lastmod>2018-12-09T14:25:28-05:00</lastmod>
     <priority>0</priority>
   </url>
   

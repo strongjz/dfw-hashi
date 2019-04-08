@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 
+publishDir = "docs"
 
 theme = "reveal-hugo"
 

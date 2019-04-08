@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.54.0" />
+    <meta charset="utf-8">
+<title>Deploying Serverless Apps With Terraform</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/reveal-js/css/reveal.css"><link rel="stylesheet" href="/reveal-js/css/theme/black.css" id="theme">
+<link rel="stylesheet" href="/highlight-js/default.min.css">
+    
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+  
+<section>
+
+<h1 id="deploying-serverless-apps-with-terraform">Deploying Serverless Apps With Terraform</h1>
+</section>
+
+  
+<section>
+
+<h3 id="whoami">whoami</h3>
+
+<p>James Strong</p>
+
+<p><img src="/images/james.png" alt="" /></p>
+
+<p>Technical Principal @ <a href="https://contino.io">Contino</a></p>
+
+<p><a href="https://twitter.com/strongjz">@strongjz</a></p>
+
+<p><a href="https://jamesstrong.dev">https://jamesstrong.dev</a></p>
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background="#FFF"
+      id="Introduction"
+      data-transition="zoom"
+      data-transition-speed="fast">
+  
+
+<h3 id="agenda">Agenda</h3>
+
+<ol>
+<li>Serverless</li>
+<li>AWS Serverless Application Model (SAM)</li>
+<li>Development</li>
+<li>Terraform deployment</li>
+<li>Demo Slack Bucks</li>
+</ol>
+
+</section><section>
+
+<h1 id="architecture">Architecture</h1>
+
+</section><section>
+
+<h3 id="slack-bucks-architecture">Slack Bucks Architecture</h3>
+
+<p><img src="/images/arch.png" alt="" /></p>
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background="#FFF"
+      id="Serverless"
+      data-transition="zoom"
+      data-transition-speed="fast">
+  
+
+<h1 id="serverless">Serverless</h1>
+</section><section>
+
+<h1 id="aws-serverless-application-model-sam">AWS Serverless Application Model (SAM)</h1>
+
+</section><section>
+
+<h3 id="aws-sam">AWS SAM</h3>
+
+<p>AWS SAM template specification</p>
+
+<pre><code class="language-yaml">   Transform: 'AWS::Serverless-2016-10-31'
+   Resources:
+   
+     ThumbnailFunction:
+       # This resource creates a Lambda function.
+       Type: 'AWS::Serverless::Function'
+       
+       Properties:
+         
+         # This function uses the Nodejs v6.10 runtime.
+         Runtime: nodejs6.10
+           
+         # This is the Lambda function's handler.
+         Handler: index.handler
+         
+         # The location of the Lambda function code.
+         CodeUri: ./src
+         
+         # Event sources to attach to this function. In this case, we are attaching
+         # one API Gateway endpoint to the Lambda function. The function is
+         # called when a HTTP request is made to the API Gateway endpoint.
+         Events:
+   
+           ThumbnailApi:
+               # Define an API Gateway endpoint that responds to HTTP GET at /thumbnail
+               Type: Api
+               Properties:
+                   Path: /thumbnail
+                   Method: GET
+</code></pre>
+
+</section><section>
+
+<h3 id="aws-sam-cli">AWS SAM CLI</h3>
+
+<p><a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-command-reference.html">Reference</a></p>
+
+<ul>
+<li>sam build</li>
+<li>sam deploy</li>
+<li>sam init</li>
+<li>sam local generate-event</li>
+<li>sam local invoke</li>
+<li>sam local start-api</li>
+<li>sam local start-lambda</li>
+<li>sam logs</li>
+<li>sam package</li>
+<li>sam publish</li>
+<li>sam validate</li>
+</ul>
+
+</section><section>
+
+<h3 id="aws-sam-cli-1">AWS SAM CLI</h3>
+
+<ul>
+<li>sam local generate-event</li>
+<li>sam local invoke</li>
+<li>sam local start-api</li>
+<li>sam local start-lambda</li>
+</ul>
+
+</section><section>
+
+<h1 id="lambda">Lambda</h1>
+
+</section><section>
+
+<h3 id="lambda-1">Lambda</h3>
+
+<p>&ldquo;AWS Lambda is a compute resource that runs your code in response to events and automatically manages the compute resources
+for you, making it easy to build applications that respond quickly to new information&rdquo;</p>
+
+</section><section>
+
+<h3 id="lambda-2">Lambda</h3>
+
+<ul>
+<li>Code: s3</li>
+<li>Metadata: DynamoDB</li>
+<li>Execution: EC2 instances</li>
+<li>Permissions: IAM Roles</li>
+</ul>
+
+</section><section>
+
+<h3 id="lambda-3">Lambda</h3>
+
+<ul>
+<li>Function</li>
+<li>Resources Allocation</li>
+<li>Code</li>
+<li>Event</li>
+<li>Trigger</li>
+</ul>
+
+</section><section>
+
+<h3 id="lambda-4">Lambda</h3>
+
+<p>&ldquo;Run and forget&rdquo;</p>
+
+</section><section>
+
+<h3 id="lambda-5">Lambda</h3>
+
+<p>Drawback: Does NOT respond to HTTP Events</p>
+
+</section><section>
+
+<h1 id="aws-api-gateway">AWS API Gateway</h1>
+
+</section><section>
+
+<h3 id="aws-api-gateway-1">AWS API Gateway</h3>
+
+<ul>
+<li>Create REST APIs</li>
+<li>Create WebSocket APIs</li>
+</ul>
+
+</section><section>
+
+<h3 id="aws-api-gateway-2">AWS API Gateway</h3>
+
+<ul>
+<li>Endpoint</li>
+<li>Methods</li>
+<li>Integration - Backend</li>
+</ul>
+
+</section><section>
+
+<h3 id="aws-api-gateway-integrations">AWS API Gateway Integrations</h3>
+
+<ul>
+<li>Lambda</li>
+<li>HTTP</li>
+<li>S3 Proxy</li>
+<li>Kinesis Proxy</li>
+</ul>
+
+</section><section>
+
+<h3 id="aws-api-gateway-endpoints">AWS API Gateway Endpoints</h3>
+
+<ul>
+<li>Edge Optimized</li>
+<li>Regional</li>
+<li>Private API</li>
+</ul>
+
+</section><section>
+
+<h3 id="aws-api-gateway-methods">AWS API Gateway Methods</h3>
+
+<ul>
+<li>HTTP Method</li>
+<li>Request Parameters</li>
+<li>Request Model</li>
+<li>Request Authorization</li>
+<li>Request Validation</li>
+</ul>
+
+</section><section>
+
+<h3 id="aws-api-gateway-authorization">AWS API Gateway Authorization</h3>
+
+<ul>
+<li>including IAM roles and policies (AWS_IAM)</li>
+<li>an Amazon Cognito user pool (COGNITO_USER_POOLS),</li>
+<li>or a Lambda authorizer (CUSTOM)</li>
+</ul>
+
+</section><section>
+
+<h1 id="dynamodb">Dynamodb</h1>
+
+</section><section>
+
+<h3 id="dynamodb-1">Dynamodb</h3>
+
+<p>Serverless Web scale NOSQL AWS managed database.</p>
+
+</section><section>
+
+<h1 id="s3">S3</h1>
+
+</section><section>
+
+<h3 id="s3-1">s3</h3>
+
+<p>Web Scale Storage</p>
+</section><section>
+
+<h1 id="serverless-development">Serverless Development</h1>
+
+</section><section>
+
+<h3 id="lambda-setup">Lambda setup</h3>
+
+<p>There&rsquo;s three basic options for structuring this using AWS Lambda:</p>
+
+<ul>
+<li>Microservice — A single lambda function is responsible for only one action.
+For example, there are 3 separate lambda functions for showing, creating and deleting a book.</li>
+<li>Service  — A single lambda function is responsible for a group of related actions.
+For example, one lambda function handles all book-related actions, but customer-related actions are kept in a separate lambda function.</li>
+<li>Monolith  — One lambda function manages all the bookstore actions.</li>
+</ul>
+
+</section><section>
+
+<h1 id="ngrok">Ngrok</h1>
+
+</section><section>
+
+<h3 id="stuff">Stuff</h3>
+
+</section><section>
+
+<h1 id="aws-sam">AWS SAM</h1>
+
+<h3 id="install-guide-https-docs-aws-amazon-com-serverless-application-model-latest-developerguide-serverless-sam-cli-install-html">Install <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html">Guide</a></h3>
+
+<pre><code>brew upgrade
+brew update
+brew tap aws/tap
+brew install aws-sam-cli
+</code></pre>
+
+</section><section>
+
+<h3 id="first-we-install-the-lambda-go-libraries">First, we install the Lambda go libraries</h3>
+
+<pre><code class="language-bash">go get github.com/aws/aws-sdk-go
+</code></pre>
+
+<pre><code class="language-bash">go get github.com/aws/aws-lambda-go/events
+</code></pre>
+
+<pre><code class="language-bash">go get github.com/aws/aws-lambda-go/lambda
+</code></pre>
+
+<h3 id="next-we-install-the-core-library">Next, we install the core library</h3>
+
+<pre><code class="language-bash">go get github.com/awslabs/aws-lambda-go-api-proxy
+</code></pre>
+
+</section><section>
+
+<h3 id="stuff-1">Stuff</h3>
+
+</section><section>
+
+<h1 id="aws-dynamodb-local">AWS Dynamodb Local</h1>
+
+</section><section>
+
+<h3 id="stuff-2">Stuff</h3>
+
+</section><section>
+
+<h1 id="deployment">Deployment</h1>
+
+</section><section>
+
+<h3 id="stuff-3">Stuff</h3>
+</section><section>
+
+<h1 id="aws-serverless-framework">AWS Serverless Framework</h1>
+
+</section><section>
+
+<h3 id="stuff">Stuff</h3>
+
+</section><section>
+
+<h1 id="lamda">Lamda</h1>
+
+</section><section>
+
+<h3 id="stuff-1">Stuff</h3>
+
+</section><section>
+
+<h1 id="aws-api-gateway">AWS API Gateway</h1>
+
+</section><section>
+
+<h3 id="stuff-2">Stuff</h3>
+
+</section><section>
+
+<h1 id="dynamodb">Dynamodb</h1>
+
+</section><section>
+
+<h3 id="stuff-3">Stuff</h3>
+
+</section><section>
+
+<h1 id="s3">S3</h1>
+
+</section><section>
+
+<h3 id="stuff-4">Stuff</h3>
+</section><section>
+
+<h1 id="demo">Demo</h1>
+
+<p><a href="https://github.com/strongjz/slack-bucks">https://github.com/strongjz/slack-bucks</a></p>
+</section><section>
+
+<h3 id="closing-remarks">Closing remarks</h3>
+
+<p><img src="/images/partyparrot.gif" alt="" /></p>
+
+<p><a href="https://twitter.com/strongjz">@strongjz</a></p>
+
+<p><a href="mailto:strong.james.e@gmail.com">strong.james.e@gmail.com</a></p>
+
+<p><a href="https://jamesstrong.dev">https://jamesstrong.dev</a></p>
+</section>
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/reveal-hugo/object-assign.js></script>
+
+<a href="/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">null</script>
+
+<script src="/reveal-js/lib/js/head.min.js"></script>
+<script src="/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+<script type="text/javascript" src="/reveal-js/lib/js/classList.js"></script>
+
+
+<script type="text/javascript" src="/reveal-js/plugin/markdown/marked.js"></script>
+
+<script type="text/javascript" src="/reveal-js/plugin/markdown/markdown.js"></script>
+
+<script type="text/javascript" src="/reveal-js/plugin/highlight/highlight.js"></script>
+
+<script type="text/javascript" src="/reveal-js/plugin/zoom-js/zoom.js"></script>
+
+
+<script type="text/javascript" src="/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+<script type="text/javascript">
+if (hljs)
+  hljs.initHighlightingOnLoad();
+</script>
+    
+    
+  </body>
+</html>
