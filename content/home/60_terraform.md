@@ -14,7 +14,7 @@ This is great if we stick to the AWS Cloudformation
 
 ### Slack Bucks Architecture
 
-![](/images/arch.png)
+![](/dfw-hashi/imagesarch.png)
 
 ---
 

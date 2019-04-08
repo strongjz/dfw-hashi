@@ -6,7 +6,7 @@ weight = 15
 
 James Strong  
 
-![](/images/james.png)
+![](/dfw-hashi/imagesjames.png)
 
 Technical Principal @ [Contino](https://contino.io)
 

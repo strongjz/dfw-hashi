@@ -6,7 +6,7 @@ weight = 900
 ### Closing remarks
 
 
-![](/images/partyparrot.gif )
+![](/dfw-hashi/imagespartyparrot.gif )
 
 [@strongjz](https://twitter.com/strongjz) 
 
