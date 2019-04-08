@@ -21,4 +21,4 @@ weight = 20
 
 ### Slack Bucks Architecture
 
-![](/images/arch.png)
+![](//dfw-hashi/images/arch.png)
