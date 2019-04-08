@@ -57,7 +57,7 @@ Transform: &#39;AWS::Serverless-2016-10-31&#39; Resources: ThumbnailFunction: # 
       
       <guid>https://strongjz.github.io/dfw-hashi/home/50_development/</guid>
       <description>Serverless Development Lambda setup There&amp;rsquo;s three basic options for structuring this using AWS Lambda:
- Microservice — A single lambda function is responsible for only one action. For example, there are 3 separate lambda functions for showing, creating and deleting a book. Service — A single lambda function is responsible for a group of related actions. For example, one lambda function handles all book-related actions, but customer-related actions are kept in a separate lambda function.</description>
+ Microservice — A single lambda function is responsible for only one action. Service — A single lambda function is responsible for a group of related actions. Monolith — One lambda function manages all the API actions.  Ngrok Spend more time programming. One command for an instant, secure URL to your localhost server through any NAT or firewall.</description>
     </item>
     
     <item>
@@ -66,7 +66,8 @@ Transform: &#39;AWS::Serverless-2016-10-31&#39; Resources: ThumbnailFunction: # 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://strongjz.github.io/dfw-hashi/home/60_terraform/</guid>
-      <description> AWS Serverless Framework Stuff Lamda Stuff AWS API Gateway Stuff Dynamodb Stuff S3 Stuff </description>
+      <description> AWS Serverless Framework this is great if we stick to the AWS Cloudformation
+Lambda Link to Lambda AWS API Gateway Link to Gateway Dynamodb Link to Dynamodb S3 Link to S3 </description>
     </item>
     
     <item>

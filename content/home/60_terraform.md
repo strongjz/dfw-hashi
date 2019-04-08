@@ -5,18 +5,15 @@ weight = 60
 
 # AWS Serverless Framework
 
----
-
-### Stuff 
+this is great if we stick to the AWS Cloudformation
 
 ---
 
-
-# Lamda
+# Lambda
 
 ---
 
-### Stuff 
+### Link to Lambda
 
 ---
 
@@ -24,7 +21,7 @@ weight = 60
 
 ---
 
-### Stuff 
+### Link to Gateway
 
 ---
 
@@ -32,7 +29,7 @@ weight = 60
 
 ---
 
-### Stuff 
+### Link to Dynamodb
 
 ---
 
@@ -40,5 +37,5 @@ weight = 60
 
 ---
 
-### Stuff 
+### Link to S3
 

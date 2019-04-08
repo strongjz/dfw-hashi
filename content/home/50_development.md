@@ -12,10 +12,8 @@ weight = 50
 There's three basic options for structuring this using AWS Lambda:
 
 * Microservice — A single lambda function is responsible for only one action. 
-For example, there are 3 separate lambda functions for showing, creating and deleting a book.
 * Service  — A single lambda function is responsible for a group of related actions. 
-For example, one lambda function handles all book-related actions, but customer-related actions are kept in a separate lambda function.
-* Monolith  — One lambda function manages all the bookstore actions.
+* Monolith  — One lambda function manages all the API actions.
 
 ---
 
@@ -24,7 +22,9 @@ For example, one lambda function handles all book-related actions, but customer-
 
 ---
 
-### Stuff 
+Spend more time programming. One command for an instant, secure URL to your localhost server through any NAT or firewall.
+
+https://ngrok.com/product
 
 ---
 
@@ -59,20 +59,10 @@ go get github.com/awslabs/aws-lambda-go-api-proxy
 
 ---
 
-### Stuff 
-
----
-
 # AWS Dynamodb Local
-
----
-
-### Stuff 
 
 ---
 
 # Deployment
 
 ---
-
-### Stuff 

@@ -166,9 +166,9 @@ Drawback: Does NOT respond to HTTP Events
 
 ### AWS API Gateway Authorization
 
- * including IAM roles and policies (AWS_IAM)
- * an Amazon Cognito user pool (COGNITO_USER_POOLS), 
- * or a Lambda authorizer (CUSTOM)
+ * IAM roles and policies (AWS_IAM)
+ * Amazon Cognito user pool (COGNITO_USER_POOLS)
+ * A Lambda authorizer (CUSTOM)
 
 --- 
 
