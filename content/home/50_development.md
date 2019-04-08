@@ -3,6 +3,9 @@ title = "Development"
 weight = 50
 +++
 
+{{< slide id="Development" background="#FFF" transition="zoom" transition-speed="fast" >}}
+
+
 # Serverless Development
 
 ---

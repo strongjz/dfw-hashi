@@ -3,6 +3,9 @@ title = "Trraform"
 weight = 60
 +++
 
+{{< slide id="Terraform" background="#FFF" transition="zoom" transition-speed="fast" >}}
+
+
 # AWS Serverless Application Model
 
 This is great if we stick to the AWS Cloudformation

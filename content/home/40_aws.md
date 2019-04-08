@@ -3,6 +3,9 @@ title = "AWS"
 weight = 40
 +++
 
+{{< slide id="AWS" background="#FFF" transition="zoom" transition-speed="fast" >}}
+
+
 # AWS Serverless Application Model (SAM)
 
 ---
