@@ -19,5 +19,6 @@ weight = 20
 
 ---
 
-### Arch picture
+### Slack Bucks Architecture
 
+![](/images/arch.png)

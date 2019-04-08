@@ -29,26 +29,30 @@ For example, one lambda function handles all book-related actions, but customer-
 ---
 
 # AWS SAM
+### Install [Guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 
-### install 
-https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html
+```
+brew upgrade
+brew update
+brew tap aws/tap
+brew install aws-sam-cli
+```
 
+---
+
+### First, we install the Lambda go libraries
 
 ```bash
 go get github.com/aws/aws-sdk-go
 ```
-
-# First, we install the Lambda go libraries
-
 ```bash
 go get github.com/aws/aws-lambda-go/events
 ```
-
 ```bash
 go get github.com/aws/aws-lambda-go/lambda
 ```
 
-# Next, we install the core library
+### Next, we install the core library
 ```bash
 go get github.com/awslabs/aws-lambda-go-api-proxy
 ```
