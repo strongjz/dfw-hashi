@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on </title>
-    <link>/home/</link>
+    <link>https://strongjz.github.io/dfw-hashi/home/</link>
     <description>Recent content in Homes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://strongjz.github.io/dfw-hashi/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/home/15_whoami/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/15_whoami/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/15_whoami/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/15_whoami/</guid>
       <description>whoami James Strong
 Technical Principal @ Contino
 @strongjz
@@ -24,66 +24,66 @@ https://jamesstrong.dev</description>
     
     <item>
       <title>Introduction</title>
-      <link>/home/20_intro/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/20_intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/20_intro/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/20_intro/</guid>
       <description> Agenda  Serverless AWS Serverless Application Model (SAM) Development Terraform deployment Demo Slack Bucks  Architecture Slack Bucks Architecture </description>
     </item>
     
     <item>
       <title>Serverless</title>
-      <link>/home/30_serverless/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/30_serverless/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/30_serverless/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/30_serverless/</guid>
       <description> Serverless </description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>/home/40_aws/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/40_aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/40_aws/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/40_aws/</guid>
       <description>AWS Serverless Application Model (SAM) AWS SAM AWS SAM template specification
 Transform: &#39;AWS::Serverless-2016-10-31&#39; Resources: ThumbnailFunction: # This resource creates a Lambda function. Type: &#39;AWS::Serverless::Function&#39; Properties: # This function uses the Nodejs v6.10 runtime. Runtime: nodejs6.10 # This is the Lambda function&#39;s handler. Handler: index.handler # The location of the Lambda function code. CodeUri: ./src # Event sources to attach to this function. In this case, we are attaching # one API Gateway endpoint to the Lambda function.</description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>/home/50_development/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/50_development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/50_development/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/50_development/</guid>
       <description>Serverless Development Lambda setup There&amp;rsquo;s three basic options for structuring this using AWS Lambda:
  Microservice — A single lambda function is responsible for only one action. For example, there are 3 separate lambda functions for showing, creating and deleting a book. Service — A single lambda function is responsible for a group of related actions. For example, one lambda function handles all book-related actions, but customer-related actions are kept in a separate lambda function.</description>
     </item>
     
     <item>
       <title>Trraform</title>
-      <link>/home/60_terraform/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/60_terraform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/60_terraform/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/60_terraform/</guid>
       <description> AWS Serverless Framework Stuff Lamda Stuff AWS API Gateway Stuff Dynamodb Stuff S3 Stuff </description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>/home/70_demo/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/70_demo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/70_demo/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/70_demo/</guid>
       <description>Demo https://github.com/strongjz/slack-bucks</description>
     </item>
     
     <item>
       <title>Closing</title>
-      <link>/home/900_closing/</link>
+      <link>https://strongjz.github.io/dfw-hashi/home/900_closing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/home/900_closing/</guid>
+      <guid>https://strongjz.github.io/dfw-hashi/home/900_closing/</guid>
       <description>Closing remarks @strongjz
 strong.james.e@gmail.com
 https://jamesstrong.dev</description>
