@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploying Serverless Apps With Terraform on </title>
+    <link>/</link>
+    <description>Recent content in Deploying Serverless Apps With Terraform on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Dec 2018 14:25:28 -0500</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/home/15_whoami/</link>
+      <pubDate>Sun, 09 Dec 2018 14:25:28 -0500</pubDate>
+      
+      <guid>/home/15_whoami/</guid>
+      <description>whoami James Strong
+Technical Principal @ Contino
+@strongjz
+https://jamesstrong.dev</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>/home/20_intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/20_intro/</guid>
+      <description> Agenda  Serverless AWS Serverless Framework Terraform deployment Development Demo Slack Bucks  Architecture </description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>/home/30_serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/30_serverless/</guid>
+      <description> Serverless </description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>/home/40_aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/40_aws/</guid>
+      <description>AWS Serverless Framework Stuff Lamda Lambda &amp;ldquo;AWS Lambda is a compute rservie that runs your code in response to events and automatically manages the compute resources for you, making it easy to build applications that respond quickly to new information&amp;rdquo;
+Lambda  Code: s3 Metadata: Dynamobdb Execution: EC2 instances Permissions: IAM Roles  Lambda &amp;ldquo;Run and forget&amp;rdquo;
+Lambda  Function Resources Allocation Code Event Trigger  Lambda Drawback: Does NOT respond to HTTP Events</description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>/home/50_terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/50_terraform/</guid>
+      <description> AWS Serverless Framework Stuff Lamda Stuff AWS API Gateway Stuff Dynamodb Stuff S3 Stuff </description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>/home/60_development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/60_development/</guid>
+      <description> Serverless Development Ngrok Stuff AWS SAM Stuff AWS Dynamodb Local Stuff Deployment Stuff </description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>/home/70_demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/70_demo/</guid>
+      <description>Demo https://github.com/strongjz/slack-bucks</description>
+    </item>
+    
+    <item>
+      <title>Closing</title>
+      <link>/home/900_closing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/900_closing/</guid>
+      <description>Closing remarks @strongjz
+strong.james.e@gmail.com
+https://jamesstrong.dev</description>
+    </item>
+    
+  </channel>
+</rss>

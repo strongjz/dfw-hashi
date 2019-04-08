@@ -1,6 +1,5 @@
 +++
 title = "Demo"
-outputs = ["Reveal"]
 weight = 70
 +++
 

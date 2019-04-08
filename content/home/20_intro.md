@@ -1,17 +1,16 @@
 +++
 title = "Introduction"
-outputs = ["Reveal"]
-
 weight = 20
-
 +++
+
+{{< slide id="Introduction" background="#FFF" transition="zoom" transition-speed="fast" >}}
 
 ### Agenda
 
 1. Serverless
-2. AWS Serverless Framework
-3. Terraform deployment
-4. Development
+2. AWS Serverless Application Model (SAM)
+3. Development
+4. Terraform deployment
 5. Demo Slack Bucks 
 
 ---
@@ -19,4 +18,6 @@ weight = 20
 # Architecture
 
 ---
+
+### Arch picture
 

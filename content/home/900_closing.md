@@ -1,6 +1,5 @@
 +++
 title = "Closing"
-date = 2018-12-09T17:13:09-05:00
 weight = 900
 +++
 

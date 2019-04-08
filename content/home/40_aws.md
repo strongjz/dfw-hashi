@@ -1,14 +1,29 @@
 +++
 title = "AWS"
-outputs = ["Reveal"]
 weight = 40
 +++
 
-# AWS Serverless Framework
+# AWS Serverless Application Model (SAM)
 
 ---
 
-### Stuff 
+### AWS SAM
+
+AWS SAM template specification 
+
+---
+
+### AWS Serverless Application Model
+ 
+ AWS SAM command line interface (AWS SAM CLI)
+
+--- 
+
+### AWS Serverless Application Model
+
+AWS SAM CLI reference
+
+https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-command-reference.html
 
 ---
 
@@ -30,7 +45,8 @@ for you, making it easy to build applications that respond quickly to new inform
 * Code: s3
 * Metadata: Dynamobdb
 * Execution: EC2 instances
-* Permissions: =[.IAM Roles
+* Permissions: IAM Roles
+
 ---
 
 ### Lambda
@@ -59,7 +75,7 @@ Drawback: Does NOT respond to HTTP Events
 
 ---
 
-### Stuff 
+### AWS API Gateway 
 
 ---
 
@@ -67,7 +83,7 @@ Drawback: Does NOT respond to HTTP Events
 
 ---
 
-### Stuff 
+### Dynamodb 
 
 ---
 
@@ -75,5 +91,5 @@ Drawback: Does NOT respond to HTTP Events
 
 ---
 
-### Stuff 
+### s3 
 

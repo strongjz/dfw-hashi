@@ -1,7 +1,6 @@
 +++
-title = "Terraform"
-outputs = ["Reveal"]
-weight = 50
+title = "Trraform"
+weight = 60
 +++
 
 # AWS Serverless Framework

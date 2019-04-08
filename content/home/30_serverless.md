@@ -1,10 +1,12 @@
 +++
 title = "Serverless"
-outputs = ["Reveal"]
 weight = 30
 +++
 
+{{< slide id="Serverless" background="#FFF" transition="zoom" transition-speed="fast" >}}
+
+
 # Serverless
 
----
+
 
