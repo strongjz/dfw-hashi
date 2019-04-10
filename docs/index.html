@@ -76,6 +76,16 @@
   
 
 <h1 id="serverless">Serverless</h1>
+
+</section><section>
+
+<p><img src="/dfw-hashi/images/nocloud.jpeg" alt="" /></p>
+
+</section><section>
+
+<p><img src="/dfw-hashi/images/serverless-ops.jpg" alt="" /></p>
+
+<p><a href="https://www.slideshare.net/AmazonWebServices/accelerate-innovation-and-maximize-business-value-with-serverless-applications-srv212r1-aws-reinvent-2018/8">Image Credit</a></p>
 </section>
 
 
@@ -189,6 +199,8 @@ for you, making it easy to build applications that respond quickly to new inform
 <li>Event</li>
 <li>Trigger</li>
 </ul>
+
+<p><a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">Limits</a></p>
 
 </section><section>
 
@@ -306,10 +318,28 @@ for you, making it easy to build applications that respond quickly to new inform
 <p>There&rsquo;s three basic options for structuring this using AWS Lambda:</p>
 
 <ul>
-<li>Microservice — A single lambda function is responsible for only one action.</li>
-<li>Service  — A single lambda function is responsible for a group of related actions.</li>
 <li>Monolith  — One lambda function manages all the API actions.</li>
+<li>Service  — A single lambda function is responsible for a group of related actions.</li>
+<li>Microservice — A single lambda function is responsible for only one action.</li>
 </ul>
+
+</section><section>
+
+<h3 id="lambda-setup-monolith">Lambda setup - Monolith</h3>
+
+<p><img src="/dfw-hashi/images/arch.png" alt="" /></p>
+
+</section><section>
+
+<h3 id="lambda-setup-service">Lambda setup - Service</h3>
+
+<p><img src="/dfw-hashi/images/services.png" alt="" /></p>
+
+</section><section>
+
+<h3 id="lambda-setup-microservice">Lambda setup - Microservice</h3>
+
+<p><img src="/dfw-hashi/images/lambda-micro.png" alt="" /></p>
 
 </section><section>
 
@@ -317,9 +347,23 @@ for you, making it easy to build applications that respond quickly to new inform
 
 </section><section>
 
+<h1 id="ngrok-1">Ngrok</h1>
+
 <p>Spend more time programming. One command for an instant, secure URL to your localhost server through any NAT or firewall.</p>
 
 <p><a href="https://ngrok.com/product">https://ngrok.com/product</a></p>
+
+</section><section>
+
+<h1 id="ngrok-2">Ngrok</h1>
+
+<p><img src="/dfw-hashi/images/ngrok.png" alt="" /></p>
+
+</section><section>
+
+<h1 id="ngrok-3">Ngrok</h1>
+
+<p><img src="/dfw-hashi/images/ngrok-running.png" alt="" /></p>
 
 </section><section>
 
@@ -351,9 +395,26 @@ brew install aws-sam-cli
 <pre><code class="language-bash">go get github.com/awslabs/aws-lambda-go-api-proxy
 </code></pre>
 
+<pre><code class="language-bash">go get github.com/awslabs/aws-lambda-go-api-proxy/gin
+</code></pre>
+
 </section><section>
 
 <h1 id="aws-dynamodb-local">AWS Dynamodb Local</h1>
+
+</section><section>
+
+<h3 id="aws-dynamodb-local-1">AWS Dynamodb Local</h3>
+
+<p><img src="/dfw-hashi/images/dynamodb.jpg" alt="" /></p>
+
+</section><section>
+
+<h2 id="aws-dynamodb-local-running">AWS Dynamodb Local Running</h2>
+
+<pre><code class="language-bash">docker run -p 8000:8000 amazon/dynamodb-local:1.11.477
+
+</code></pre>
 
 </section><section>
 
@@ -380,35 +441,9 @@ brew install aws-sam-cli
 
 </section><section>
 
-<h1 id="lambda">Lambda</h1>
+<h1 id="terraform-code">Terraform code</h1>
 
-</section><section>
-
-<h3 id="link-to-lambda">Link to Lambda</h3>
-
-</section><section>
-
-<h1 id="aws-api-gateway">AWS API Gateway</h1>
-
-</section><section>
-
-<h3 id="link-to-gateway">Link to Gateway</h3>
-
-</section><section>
-
-<h1 id="dynamodb">Dynamodb</h1>
-
-</section><section>
-
-<h3 id="link-to-dynamodb">Link to Dynamodb</h3>
-
-</section><section>
-
-<h1 id="s3">S3</h1>
-
-</section><section>
-
-<h3 id="link-to-s3">Link to S3</h3>
+<h3 id="https-github-com-strongjz-slack-bucks-blob-master-terraform"><a href="https://github.com/strongjz/slack-bucks/blob/master/terraform/">https://github.com/strongjz/slack-bucks/blob/master/terraform/</a></h3>
 </section><section>
 
 <h1 id="demo">Demo</h1>

@@ -105,6 +105,8 @@ for you, making it easy to build applications that respond quickly to new inform
 * Event
 * Trigger
 
+[Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
+
 ---
 
 ### Lambda

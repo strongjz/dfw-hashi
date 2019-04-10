@@ -18,33 +18,6 @@ This is great if we stick to the AWS Cloudformation
 
 ---
 
-# Lambda
+# Terraform code
 
----
-
-### Link to Lambda
-
----
-
-# AWS API Gateway
-
----
-
-### Link to Gateway
-
----
-
-# Dynamodb
-
----
-
-### Link to Dynamodb
-
----
-
-# S3
-
----
-
-### Link to S3
-
+### https://github.com/strongjz/slack-bucks/blob/master/terraform/

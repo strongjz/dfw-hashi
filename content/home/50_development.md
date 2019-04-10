@@ -14,9 +14,29 @@ weight = 50
 
 There's three basic options for structuring this using AWS Lambda:
 
-* Microservice — A single lambda function is responsible for only one action. 
-* Service  — A single lambda function is responsible for a group of related actions. 
 * Monolith  — One lambda function manages all the API actions.
+* Service  — A single lambda function is responsible for a group of related actions. 
+* Microservice — A single lambda function is responsible for only one action. 
+
+---
+
+### Lambda setup - Monolith
+
+![](/dfw-hashi/images/arch.png)
+
+---
+
+
+### Lambda setup - Service
+
+
+![](/dfw-hashi/images/services.png)
+
+---
+
+### Lambda setup - Microservice
+
+![](/dfw-hashi/images/lambda-micro.png)
 
 ---
 
@@ -25,9 +45,23 @@ There's three basic options for structuring this using AWS Lambda:
 
 ---
 
+# Ngrok 
+
 Spend more time programming. One command for an instant, secure URL to your localhost server through any NAT or firewall.
 
 https://ngrok.com/product
+
+---
+
+# Ngrok 
+
+![](/dfw-hashi/images/ngrok.png) 
+
+---
+
+# Ngrok 
+
+![](/dfw-hashi/images/ngrok-running.png)
 
 ---
 
@@ -60,9 +94,33 @@ go get github.com/aws/aws-lambda-go/lambda
 go get github.com/awslabs/aws-lambda-go-api-proxy
 ```
 
+
+```bash
+go get github.com/awslabs/aws-lambda-go-api-proxy/gin
+```
+
+
+
 ---
 
 # AWS Dynamodb Local
+
+---
+
+
+### AWS Dynamodb Local
+
+![](/dfw-hashi/images/dynamodb.jpg) 
+
+
+---
+
+## AWS Dynamodb Local Running
+
+```bash
+docker run -p 8000:8000 amazon/dynamodb-local:1.11.477
+
+```
 
 ---
 
